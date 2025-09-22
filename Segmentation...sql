@@ -1,3 +1,4 @@
+
 -- Top merchants last 30d
 SELECT m.merchant_name,COUNT(*) AS tx_count,SUM(t.amount) AS total_amount
 FROM transactions t JOIN merchants m ON t.merchant_id=m.merchant_id
